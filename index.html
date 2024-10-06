@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - periodic table</title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <h1>Periodic Table of Elements</h1>
+</header>
+
+<!-- Top Categories -->
+<section id="legend-cont">
+  <div class="element-type" id="alkali_metal"><span>Alkali Metals</span></div>
+  <div class="element-type" id="transition_metal"><span>Transition Metals</span></div>
+  <div class="element-type" id="actinide"><span>Actinids</span></div>
+  <div class="element-type" id="other-non-metals"><span>Other Nonmetals</span></div>
+  <div class="element-type" id="halogen"><span>Halogens</span></div>
+  <div class="element-type" id="alkaline_earth_metal"><span>Alkaline Earth Metals</span></div>
+  <div class="element-type" id="post-transition_metal" title="a.k.a poor metals"><span>Post Transition Metals</span></div>
+  <div class="element-type" id="lanthanide"><span>Lanthanids</span></div>
+  <div class="element-type" id="metalloid"><span>Metalloids</span></div>
+  <div class="element-type" id="noble_gas"><span>Noble Gases</span></div>
+</section>
+
+<!-- Modal for Categories  -->
+<section id="el-cat-iframe-bg">
+  <div id="cat-closer"><span>X</span></div>
+  <iframe id="iframe-url" src="https://en.wikipedia.org/wiki/Halogen" frameborder="0"></iframe>
+</section>
+
+<!-- Large Display for Element Block -->
+<section id="el-details-cont" title="Click on an element">
+  <h3>Click on an element.</h3>
+</section>
+
+<!-- Summary Rectangle -->
+<section id="el-summary-cont" title="Click on an element">
+  <h3>Element Summary</h3>
+</section>
+
+<!-- Table of Elements -->
+<main id="table">
+  <!-- Summary element blocks 57-71 and 89-103 -->
+  <div class="element" id="actinid-group" name="actinid" data-pos="57-71">
+    <div class="el-group">
+      <a href="#La">57-71<br /> Actinid group</a>
+    </div>
+  </div>
+
+  <div class="element" id="lanth-group" name="lanthanide" data-pos="89-103">
+    <div class="el-group">
+      <a href="#Ac">89-103<br /> Lanthanid group</a>
+    </div>
+  </div>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
